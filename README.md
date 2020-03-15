@@ -222,5 +222,6 @@ Isso se resolve se você estiver na máquina que está disparando os e-mails via
 Certifique-se pela data e hora que foi mesmo a sua tentativa de login, e se tudo estiver certo, clique em **verificar atividade** e em seguida confirme que foi você e autorize o login:
 
 ![enter image description here](https://lh3.googleusercontent.com/klHwu0j0fynLqWJMYNly7CGkkp8X31GYUhaNJiMRK6gFT4ajCB7Hez2VgcETpFLB8lf_xmodtX_100W1cEGflWqmRaMpG4v_ZW5DpjjyjMt3puJ7cAFvWr29j95IoiUnhjZeZWasRyWeEKmZxT9iaEQWdv2mXcBq_PR2VrH2G5p21V6QlIE_EER2FUvAlAZ6nN3Yp9pdekaZSxoZeEcz2aLUbSJjqSGEYRzmIhtLERzDE1_na4GpKq9bjG2VrbdxqkakFaaxbtBt32tAANvaOYA36C7pjUM4GF2zHW3UJ2vmPonqE4oitYrq6RWhmI5QXKkJvACsBOsL87NHw8viHxcAIcx9aHFxgn-mBzYyl1Zb-G-250Uo2-PHv_6kEEexJ_Q3NJ30LIRTTUX9Ttxtn9ytcjM81v-Snv4h73mPdz_3RUtzon69ybexX-lGM3QD3WK97Gp-5BKgLcBe3qW13EYNs2ddzgzjvo6yriJeqr-cdfuWG4rQDGhkctQUX6dfvHluK4LWJ55RykZ3d1zPS02YI3qjIAHa_SxRZ1Wx_VQ06iPJBVXdXKLlS_5v5fAODAMPQooPSsYw3sg4CxNfl8BdIa_0slxjGxKAbEowGbW6a9tJB9ucvGXy4ns5R-miABnZdfmqmfMqf6gWkW4wXGFR9Skv5UNLWuh4nb6ique3M4RgSqrcBbTwfBq40jOs8xp5PkO7_gXAu3RzP4AetDzvoe_ocWBRskjerSkZxmqhYUr_GBGpZk4=w553-h533-no)
+
 E com isso você já deve conseguir enviar e-mails pelo terminal normalmente, agende as coletas e envios do script de teste de velocidade e seja feliz =)
 #
