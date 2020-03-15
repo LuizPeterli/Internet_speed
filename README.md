@@ -84,7 +84,7 @@ O ideal seria colocar o script em execução automática pelo cron da máquina, 
 Partamos do exemplo que o scipt esteja armazenado no diretório **/script**, veja o exemplo de como ficariam as entradas dele no crontab **/etc/crontab** da máquina:
 
 ```
-## Medindo a velocidade da internet no clube
+## Medindo a velocidade da internet
 ## 0 - Coletando criando o cabecalho do script e aguardando as coletas
 00	7	*	*	*	root	/scripts/internet_speed.sh global
 ## 1 - Primeira coleta de informacoes de velocidade da MANHA
