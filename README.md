@@ -83,7 +83,27 @@ O ideal seria colocar o script em execução automática pelo cron da máquina, 
 
 Partamos do exemplo que o scipt esteja armazenado no diretório **/script**, veja o exemplo de como ficariam as entradas dele no crontab **/etc/crontab** da máquina:
 
-![enter image description here](https://lh3.googleusercontent.com/oaCrmjfTdX3xxCUog9AglHhC7t2L5ImQ4sgiwmxd0LbMBdk9btbaJHahEXIP1u3X1MyGXLx3AZPv_u18gewRco_mi3pX7napPjuyDAQv9sIZ_EedBI97Ub9_76qKU0Vx7U_rxv1VK6mBqmbNhLX8t2V-_Zh_9hLxiHHMPBWjNHx2vRaS62JVoJd5l_g-T4D8PLxa7Y8sWwPUuLuJ-x3npPvWuNLWVqZ-YtOkJallOckOtYdOriBz9NC3cV52OQWGzR-BaLeDpI79_Bpp0rUS6skOOIFvkjtc1mRFfqK6l7seDgk9PBvaw_T71QFOr79B5pYrnLjr9YmWd9GqqKNdqOCzyRnf-jCGiOdKeURRq9zCV58ZH5bMi6aKnZsaeeRvdO2l1cxyoyhnJyv5btgGp5GPS-WxrPl70I1SeVt_3iNDbX7MSZb5TLALVYPhWj_8lDTL37F3Io3RSXAaSLxrXwJe-K-Jec2V_eVKBozbarPwYGjgXVpdp9OgqVkjYOTK1sa8rbfs3cTth9vjn3RUda1A0WXcUnJJskm8FgKBJnJlNeUbba229cuGA77Y7XPzRv_mkX7m4nU85FUOeOW9dDPx-ISIHIGB8AogjEsIILXjmfX7p2JMlp8avIt7tfYduODY2mKrT1aXV715opTI7mbx7R8ZuepNsCFrGs53CgSSAl9ZPuoio6oX6uc8IUwW1sxk0VkEvWuuwzKHxrbhU5w3psRZLhMqUFFRWkB5wUDqzrArrn7dqjw=w602-h264-no)
+```
+## Medindo a velocidade da internet no clube
+## 0 - Coletando criando o cabecalho do script e aguardando as coletas
+00	7	*	*	*	root	/scripts/internet_speed.sh global
+## 1 - Primeira coleta de informacoes de velocidade da MANHA
+00	8	*	*	*	root	/scripts/internet_speed.sh coleta
+## 2 - Segunda coleta de informacoes de velocidade da MANHA
+00	10	*	*	*	root	/scripts/internet_speed.sh coleta
+## 3 - Primeira coleta de informacoes de velocidade da TARDE
+00	12	*	*	*	root	/scripts/internet_speed.sh coleta
+## 4 - Segunda  coleta de informacoes de velocidade da TARDE
+00	16	*	*	*	root	/scripts/internet_speed.sh coleta
+## 5 - Primeira coleta de informacoes de velocidade da NOITE
+00	18	*	*	*	root	/scripts/internet_speed.sh coleta
+## 6 - Segunda coleta de informacoes de velocidade da NOITE
+00	20	*	*	*	root	/scripts/internet_speed.sh coleta
+## 7 - Envio do arquivo de log
+05	20	*	*	*	root	/script/internet_speed.sh envia
+##
+
+```
 
 #
 
