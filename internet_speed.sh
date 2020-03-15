@@ -2,7 +2,7 @@
 
 ###  ##################################################################### ###
 ###      Script medicao de velocidade - Por Luiz Peterli - em 11/03/20     ###
-###  Dependencias: speedtest mailutils postfix wget mutt dnsutils ###
+###      Dependencias: speedtest mailutils postfix wget mutt dnsutils      ###
 ###  ##################################################################### ###
 
 
