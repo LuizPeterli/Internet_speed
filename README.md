@@ -24,7 +24,7 @@ O próximo passo da verificação é checar se existem instalados no sistema ope
 
 Sendo assim, basta executar o seguinte comando em um sistema Debian ou Ubuntu para habilitar a execução da ferramenta:
 
-    sudo apt install curl mailutils wget dig mutt dnsutils postfix -y; wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py -O speedtest-cli; sudo chmod +x speedtest-cli; sudo mv speedtest-cli /usr/bin/speedtest-cli
+    sudo apt install mailutils wget mutt dnsutils postfix -y; wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py -O speedtest-cli; sudo chmod +x speedtest-cli; sudo mv speedtest-cli /usr/bin/speedtest-cli
 #
 
 **`Execução do script`**
