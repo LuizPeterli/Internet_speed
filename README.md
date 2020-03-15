@@ -44,6 +44,7 @@ E por último, o terceiro parâmetro, o de fechamento e envio do arquivo HTML:
 `./internet_speed.sh envia `
 
 Caso seja executado sem nenhum parâmetro o próprio script informará que necessita de um desses três para funcionar.:
+
 ![enter image description here](https://lh3.googleusercontent.com/yMohhQEyWXhCaNJmsDuVyeExGElrghn-mawvx3_6UaiiDt--z1BP2IczER6JtAtqIQ5gHdbQ5qLqf_qLagyK2aGqVDroobX3uXCVqtWrdKb4pcajcAYfr0GWWhjG5RvsO3OUxdtH486paeTnJ0xoMVTk_3Nx5pEkWVisC33iY7LuQhCFNKuH_nqRhbAhoUWpD3rpPW2RVAdYLFZK86gWBUBV0gIMnG67jZ7wpRV1GBsiG-aGlw2a6d0KNSJ54Darkf9jThlG8GH3Jr4qdBDlg89PIcyOywELiI2gRfZZ0qJ0dPUidDALdHtQB9C7y5NtIGtUW3TSb1mkF-IzrxFYBsXZectcahPaUc1lahuqCTOAwtLe5wmvA66pnVQ37GMsFKCUPYmHmFE2j3C9s70B1drlAj1L3icFfibs4SdbHLFAtAlg5Lct4qXGarHWafYvJq4ipAfDBtZTnZIkC6q-LDcFxcXqOk47ahhQ8_Bjp0vqdtJxO0EXyvfotc8IFuNoj2bWqS6FtAQTHCqoX4-iHRl4rh51x9FCHx_C1krFA5lqqDNdNoKjWApUsJspwU3G5WLeHFaq58bNXt6lEz06PL8_HFAv5SpXECsOcvGMU1icLc1RM_xuHU1cCEDul-mXnCQhMQ0bXbQLZmDlw4oFT0-w46LNYkX4BDDTsJt0SwUl5xZgfECE7M0lZbEl9fiyOXLkFtLS5-9XSPDOMUg3p3GSUNPs1J__s3ss0b62U4pLiG0kvPkiQ7U=w562-h165-no)
 
 Caso ainda sim os parâmetros **coleta** ou * **envia** sejam executados sem o parâmetro **global** (que deve ser o primeiro a ser executado), esses dois últimos invocam automaticamente o parâmetro global para iniciar o arquivo de log, pois sem ele seria impossível montar o arquivo HTML.
@@ -82,23 +83,8 @@ O ideal seria colocar o script em execução automática pelo cron da máquina, 
 
 Partamos do exemplo que o scipt esteja armazenado no diretório **/script**, veja o exemplo de como ficariam as entradas dele no crontab **/etc/crontab** da máquina:
 
-`# 0 - Coletando criando o cabecalho do script e aguardando as coletas`
-`00	7	*	*	*	root	/scripts/internet_speed.sh global`
-`# 1 - Primeira coleta de informacoes de velocidade da MANHA`
-`00	8	*	*	*	root	/scripts/internet_speed.sh coleta`
-`# 2 - Segunda coleta de informacoes de velocidade da MANHA`
-`00	10	*	*	*	root	/scripts/internet_speed.sh coleta`
-`# 3 - Primeira coleta de informacoes de velocidade da TARDE`
-`00	12	*	*	*	root	/scripts/internet_speed.sh coleta`
-`# 4 - Segunda  coleta de informacoes de velocidade da TARDE`
-`00	16	*	*	*	root	/scripts/internet_speed.sh coleta`
-`# 5 - Primeira coleta de informacoes de velocidade da NOITE`
-`00	18	*	*	*	root	/scripts/internet_speed.sh coleta`
-`# 6 - Segunda coleta de informacoes de velocidade da NOITE e envio`
-`00	20	*	*	*	root	/scripts/internet_speed.sh coleta`
-`# 7 - Envio do arquivo de log`
-`05	20	*	*	*	root	 /script/internet_speed.sh envia`
-`#`
+![enter image description here](https://lh3.googleusercontent.com/_hCq2foyvJphrNYfRXB_Cf_W3c9BUd3gVkBAyRf27GUn4THFVnejqdIjDvD1QY5ocN0IHccSwvh-vUzDtNY-EJ7HFB-J8v03nQ_Ic1-N17VT-mJNxiqD-jz0tUCf2uyuV8_MM5aO880gIymu0dlIGbimvpAy15lm5O3TCQXND0v8IO_FfGy9xJOFqnjSNQPYicvc55_SFGXBcGLwSKtbl9oDTKpFnNhipkcQYmsdSYEKv1dkeQ4yKzhkfzeVzwXVxORcL43BOsh1jjaRavzsOTpTW9dlmGDjN_rOvxNxcVwRLcKQ5PO3pHW16yULxseAr-SDvDr1YXx5ape9sWonuuhP-aaM-sP3xW79ONNxweQJWEOop5ZnySS7oeYuvZRxuwIB0me6Cz3-pVW0lgQkiLB-es4OSIBd6fKvo4uUnj-hfc3UScU18EAXUtENTQmi-LCUxTcJh1siKz_ScxkxidxgZeSMMZjRAtMlzh_W3_SATECIYV_eqvfyZB77gpIYDJvAHqKlTA7A8G9Zlce5bzg3LOZ3FGG0EVpk0kRi62E3YJDsJwnF3hGLlzudUr9DcriIPFXR1-eEOT0FbakT2OsiG4bEia8LX8Gulnu5aT5q0_G8GbQ3s_R3ntJtsJO5YnPicE1li1txVp5gOJ60A7LeH8ZKpZIByERYv-j7dHig0oo5C9ruPKaY4v1ALU8fWCMNWjiAK_rdfn0qg8DBSkokkT1Va2NFdIFGVGsNP6GLm5P2urCQ4qc=w603-h256-no)
+
 #
 
 **`Modelos do e-mail de log`**
@@ -106,11 +92,15 @@ Partamos do exemplo que o scipt esteja armazenado no diretório **/script**, vej
 Seguem a baixo modelos dos e-mails enviados pelo script via SMTP Relay do sistema operacional da máquina:
 
 **Modelo Desktop**
+
 ![enter image description here](https://lh3.googleusercontent.com/ltB2z76GlgD6K267JDGCuUjbCjtXP__y58BKWAzPZDAQW9xCW4ctGFS3fc6wl2EHZ6SsomC868nK0jPzbkGb58VWChGMhSzUgtvtMNz6giokaEk_S8yhmdydfZfZZkGuUyDsQJ6Gt97DK12nFVaaw7EGM0BKvl97fYaOLGT4KM2Nkq4i6O6e_3Kc-RwfzOqQ7wKGp0xBY0tTB2G9judj5HNeLIo37AEfBxfCpPwIQ0IgWUmbbFfEGnR9aoxLip3x988zEr12JQypgVChs-1RDUzy24QtAtzHwRtYQGlX74laThy8MRPe30gL51jp8HTkW69kWN4TMb7Oa11gWMo0UP9NBMFfZsaYssZDSO-PVKaEa-ndho5n_bSJiCwhSXU0l9LcXpd0pnFJRNb6HOytQxztwO_sHYOZplYWYx1jllDAo4rS3FuGwdL3ew6xr5XsgtSgEahy0ubUKJ5jDg-VVRCbjAwOpEkSUxelECo7bTNQZ03MJiMgvM7NYWgsQfN3DGnfFOoSVoL3KZFfqiiS5HvXRwPaPIoSnHcjn1tN4pBTqZiuP1gMVr27kogFm0WsMO-vDGTypbgaQ4OHsdu9cqEqs2--ZzyDrrJwEO5qM0Nl17lxgyeHjMmWsIpO8Gk2VKqrHty24JDTShhibqN-66YIRqnyvWQrkQCqRNu2o2yq7-5vJxH9MK62sWEuvM7Itfl-oaDglqNjr2U_uJyEX-VYceoGYpUgnTZ3hzFjUk5bQV8lNiQ1eGw=w636-h622-no)
 
 
+
 **Modelo Mobile**
+
 ![enter image description here](https://lh3.googleusercontent.com/ie6pwxDccly-LZqusV5zsJQr-5vJV92pYIPqynYPpzc7PKgdzhO3ArMJzfSHWhE2lenJShWs5V5DGRUYDmdd0c9HBcgnW4ZxCii4iEALWd8PWGeVsn3r3m3FFv6BclGYlOFGCUSqb99ddCp0_1ckcF9P1Kej32S04QItBQiiVdl5y9iT7iJ_SQ4DzyED94pQsz26FX4Kepem_i5dwFw2xuhnBMR9Fin4z2xWpzSqLOYb5rXivV45Sge2SZwKH4WuBfWiyS9PgqjKTwZ4vEvNDQvyhs9HzR_Z8hAsTozMdddvj7A9lWdWbuUIQnN15emjGoR_mr7APm9GM5KY43HEL5-mTJriOmFSLxfaPiyaOVL8_V4hJ8-uILR-oTxH9GYn8ILSVGzWmosmfZatdvPdekkiCE_Mgrlrs6knWqAlzcljBCb861E_JIZY2MfFOxOYDh6Z8amBsBhvZBbU9ZvV5OjpTyCibElUrUOiIP-LqM64SaMQFWvXVXL0oA_uBJ8rFScs1QTe-OtoVKTxCOI28PwhM22wG-Ae_5BMjwz1a_HYhE6i-EV6XRjwnw3jCr8nyCClWJlnRCOeybmuFczDdea6Nph27dU3sJpg71F4E0JPNqMtsupis8yXiw1ykcCxM_gF_HYrXJAxFG9c7BS2PEXAgmdE7rLyIy7jqRnad2Gc0Y_4lu9o-kmRRkvyElWkoG9sM4XSnJ0uyD9uhbVwP9IWaYK-qKD6HsA857flifpXOb6y-6NfsEg=w324-h622-no)
+
 #
 
 **`Arquivo de HTML de log`**
