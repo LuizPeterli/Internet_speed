@@ -13,6 +13,9 @@ VARS_HTML(){
 ###> DEFINA AQUI O TITULO DO HTML
 TCB=`echo -e "Report Speedtest" `
 
+###> INSIRA AQUI O TITULO DO EMAIL
+TDE=`echo "Report de velocidade de internet em $DT2 por $NDM"`
+
 ###> ESSE CAMPO ESTÁ DENTRO DO CORPO DO HTML, E É MOSTRADAS NAS MENSAGENS DE PUSH DOS CELULARES
 ###> QUANDO UM E-MAIL APARECE NO MENU PUSH DO SMART PHONE, ESSA MENSAGEM É MOSTRADA COMO DESCRIÇÃO
 PSM=`echo "A estação $NDM reportou automaticamente "`
@@ -46,9 +49,6 @@ EQV=`echo "--@gmail.com"`
 ###> INSIRA AQUI O E-MAIL OU LISTA QUE IRÁ RECEBER O LOG
 ###> CASO QUEIRA ENVIAR O LOG PARA MAIS DE UM E-MAIL OS SEPARE POR VÍRGULA OU ESPACOS
 EQR=`echo "--@gmail.com"`
-
-###> INSIRA AQUI O TITULO DO EMAIL
-TDE=`echo "Report de velocidade de internet em $DT2"`
 }
 
 
