@@ -137,24 +137,16 @@ KRN=$(uname -a)
 
 ###> VERIFICANDO A COMPATIBILIDADE DO SISTEMA OPERACIONAL
 case "$KRN" in
-    *buntu*)
-        ###> CASO O SISTEMA OPERACIONAL SEJA UBUNTU
-        VARS1
-        ;;
-    *ebian*)
-        ###> CASO O SISTEMA OPERACIONAL SEJA O DEBIAN
+    *buntu*|*ebian*)
+        ###> CASO O SISTEMA OPERACIONAL SEJA UBUNTU OU DEBIAN
         VARS1
         ;;
     *icrosoft*)
         ###> CASO O SISTEMA OPERACIONAL SEJA EMBARCADO MICROSOFT
         SEM=$(cat /etc/[A-Za-z]*[_-][rv]e[lr]* |grep 'NAME="')
         case "$SEM" in
-            *buntu*)
-                ###> CASO O SISTEMA OPERACIONAL SEJA UBUNTU
-                VARS1
-                ;;
-            *ebian*)
-                ###> CASO O SISTEMA OPRACIONAL SEJA DEBIAN
+            *buntu*|*ebian*)
+                ###> CASO O SISTEMA OPERACIONAL SEJA UBUNTU OU DEBIAN
                 VARS1
                 ;;
             *)
@@ -165,7 +157,7 @@ case "$KRN" in
         ;;
     *)
         ###> CASO O SISTEMA OPERACIONAL NAO SUPORTE O SCRIPT
-        clear;echo -e "\nInfelizmente o script ${BR}não ofecerece suporte${NM} ao sistema operacional ${BB}$KRN${NM}\n";exit 1
+        clear;COLOR;echo -e "\nInfelizmente o script ${BR}não ofecerece suporte${NM} ao sistema operacional ${BB}$KRN${NM}\n";exit 1
         ;;
 esac
 
