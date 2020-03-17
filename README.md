@@ -86,22 +86,22 @@ Partamos do exemplo que o scipt esteja armazenado no diretório **/script**, vej
 ```
 ## Medindo a velocidade da internet
 ## 0 - Coletando criando o cabecalho do script e aguardando as coletas
-00	7	*	*	*	root	/scripts/internet_speed.sh global
+00	07	*	*	*	root	/scripts/internet_speed.sh global
 ## 1 - Primeira coleta de informacoes de velocidade da MANHA
-00	8	*	*	*	root	/scripts/internet_speed.sh coleta
+01	08	*	*	*	root	/scripts/internet_speed.sh coleta
 ## 2 - Segunda coleta de informacoes de velocidade da MANHA
-00	10	*	*	*	root	/scripts/internet_speed.sh coleta
+02	10	*	*	*	root	/scripts/internet_speed.sh coleta
 ## 3 - Primeira coleta de informacoes de velocidade da TARDE
-00	12	*	*	*	root	/scripts/internet_speed.sh coleta
+03	12	*	*	*	root	/scripts/internet_speed.sh coleta
 ## 4 - Segunda  coleta de informacoes de velocidade da TARDE
-00	16	*	*	*	root	/scripts/internet_speed.sh coleta
+04	14	*	*	*	root	/scripts/internet_speed.sh coleta
 ## 5 - Primeira coleta de informacoes de velocidade da NOITE
-00	18	*	*	*	root	/scripts/internet_speed.sh coleta
+05	16	*	*	*	root	/scripts/internet_speed.sh coleta
 ## 6 - Segunda coleta de informacoes de velocidade da NOITE
-00	20	*	*	*	root	/scripts/internet_speed.sh coleta
+06	18	*	*	*	root	/scripts/internet_speed.sh coleta
 ## 7 - Envio do arquivo de log
-05	20	*	*	*	root	/script/internet_speed.sh envia
-##
+10	18	*	*	*	root	/scripts/internet_speed.sh envia
+#
 
 ```
 
