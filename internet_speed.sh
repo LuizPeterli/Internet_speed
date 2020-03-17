@@ -607,7 +607,7 @@ if [ -f ${DIT}${LHL} ]; then
 fi 
 }
 
-###> INFORMADO OS PARAMTROS DO SCRIP
+###> INFORMADO OS PARAMTROS DO SCRIPT
 case "$1" in
 "global") global ;;
 "coleta") coleta ;;
