@@ -91,7 +91,7 @@ for i in "${array[@]}"
 do
     ### VERIFICANDO SE O ITEM DA LISTA DO ARRAY ESTA INSTALADO NO SISTEMA
     LTP=`dpkg --get-selections |grep $i |wc -l`
-    ### CASO O ITE, ESTEJA INSTALADO ELE RETORNA UM NUMERO MAIOR QUE ZERO
+    ### CASO O ITEM, ESTEJA INSTALADO ELE RETORNA UM NUMERO MAIOR QUE ZERO
     if [ $LTP -gt 0 ]; then
             ### CASO O PROGRAMA ESTEJA INSTALADO ELE MOSTRA A MENSAGEM A BAIXO 
             echo -e "Programa instalado" >/dev/null 2>&1
